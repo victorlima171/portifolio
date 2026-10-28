@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de desenvolvimento front-end.">
+  <title>Victor | Minha Vitrine Dev</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="topo">
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <a class="logo" href="#inicio" aria-label="Minha Vitrine Dev, início">V<span>.</span>DEV</a>
+    <button class="menu-botao" id="menuBotao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuNavegacao">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navegacao" id="menuNavegacao" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button class="tema-botao" id="temaBotao" type="button" aria-label="Alternar modo claro e escuro" title="Alternar tema">☼</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero secao" id="inicio" aria-labelledby="titulo-principal">
+      <div class="hero-texto">
+        <p class="sobretitulo" id="saudacao">Olá!</p>
+        <h1 id="titulo-principal">Eu sou <span>Victor</span>,<br>desenvolvedor em formação.</h1>
+        <p class="hero-descricao">Estudante de Desenvolvimento de Sistemas, aprendendo a transformar ideias em experiências digitais com código.</p>
+        <a class="botao primario" href="#projetos">Conheça meus projetos <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="avatar-area">
+        <div class="avatar" role="img" aria-label="Avatar ilustrado com as letras V e D">V<span>D</span></div>
+        <p>Aprendendo hoje, criando o próximo.</p>
+      </div>
+    </section>
+
+    <section class="secao sobre" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="secao-cabecalho">
+        <p class="sobretitulo">Um pouco sobre mim</p>
+        <h2 id="titulo-sobre">Construindo meu caminho na tecnologia<span>.</span></h2>
+      </div>
+      <div class="sobre-conteudo">
+        <p>Sou estudante do curso Técnico em Desenvolvimento de Sistemas no SENAC MedTec. Tenho aprendido sobre programação, criação de páginas web e organização de dados, e gosto de colocar esse conhecimento em prática nos projetos das aulas.</p>
+        <p>Meu objetivo é conquistar uma oportunidade de estágio na área de tecnologia, melhorar minhas habilidades em front-end e continuar aprendendo com desafios reais e com outras pessoas da área.</p>
+      </div>
+    </section>
+
+    <section class="secao" id="habilidades" aria-labelledby="titulo-habilidades">
+      <div class="secao-cabecalho">
+        <p class="sobretitulo">O que estou aprendendo</p>
+        <h2 id="titulo-habilidades">Minhas habilidades<span>.</span></h2>
+      </div>
+      <div class="habilidades-grade">
+        <article class="habilidade-card"><span class="habilidade-icone" aria-hidden="true">HTML</span><h3>HTML5</h3><p>Estrutura semântica de páginas.</p><span class="nivel">Praticando</span></article>
+        <article class="habilidade-card"><span class="habilidade-icone" aria-hidden="true">CSS</span><h3>CSS3</h3><p>Estilização, Flexbox, Grid e responsividade.</p><span class="nivel">Praticando</span></article>
+        <article class="habilidade-card"><span class="habilidade-icone" aria-hidden="true">JS</span><h3>JavaScript</h3><p>Interatividade e lógica no navegador.</p><span class="nivel">Iniciante</span></article>
+        <article class="habilidade-card"><span class="habilidade-icone" aria-hidden="true">PY</span><h3>Python</h3><p>Lógica de programação e pequenos sistemas.</p><span class="nivel">Praticando</span></article>
+        <article class="habilidade-card"><span class="habilidade-icone" aria-hidden="true">SQL</span><h3>SQL / SQLite</h3><p>Criação de tabelas e consultas a bancos de dados.</p><span class="nivel">Iniciante</span></article>
+        <article class="habilidade-card"><span class="habilidade-icone" aria-hidden="true">UI</span><h3>Figma</h3><p>Protótipos e organização visual de interfaces.</p><span class="nivel">Aprendendo</span></article>
+      </div>
+    </section>
+
+    <section class="secao projetos" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="secao-cabecalho">
+        <p class="sobretitulo">Prática em sala de aula</p>
+        <h2 id="titulo-projetos">Projetos em destaque<span>.</span></h2>
+        <p class="secao-intro">Troque os exemplos abaixo pelos seus trabalhos reais e inclua links quando tiver os arquivos publicados.</p>
+      </div>
+      <div class="projetos-grade">
+        <article class="projeto-card">
+          <div class="projeto-imagem imagem-eco" role="img" aria-label="Ilustração de ondas do mar e símbolo de reciclagem"><span>♻</span></div>
+          <div class="projeto-info"><p class="projeto-tipo">Python · Projeto de curso</p><h3>EcoMar</h3><p>Programa de console para registrar coletas de resíduos nas praias e consultar o total coletado em quilos.</p><div class="tags"><span>Python</span><span>Funções</span><span>Listas</span></div><a href="#contato" class="link-projeto">Saiba mais <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="projeto-card">
+          <div class="projeto-imagem imagem-biblioteca" role="img" aria-label="Ilustração de livros organizados em uma estante"><span>▤</span></div>
+          <div class="projeto-info"><p class="projeto-tipo">SQLite · Banco de dados</p><h3>Sistema de Biblioteca</h3><p>Modelagem de tabelas para livros, autores, leitores e empréstimos, com relacionamentos entre os dados.</p><div class="tags"><span>SQLite</span><span>SQL</span><span>Modelagem</span></div><a href="#contato" class="link-projeto">Saiba mais <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="projeto-card">
+          <div class="projeto-imagem imagem-web" role="img" aria-label="Ilustração de uma janela de navegador com código"><span>&lt;/&gt;</span></div>
+          <div class="projeto-info"><p class="projeto-tipo">HTML · CSS · JavaScript</p><h3>Página Web Responsiva</h3><p>Exercício de front-end com estrutura semântica, estilos próprios e adaptação para diferentes telas.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#contato" class="link-projeto">Saiba mais <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <p class="aviso-projetos">Importante: mantenha apenas projetos que você realmente desenvolveu e ajuste as descrições para refletirem o seu código.</p>
+    </section>
+
+    <section class="secao contato" id="contato" aria-labelledby="titulo-contato">
+      <div class="secao-cabecalho">
+        <p class="sobretitulo">Vamos conversar</p>
+        <h2 id="titulo-contato">Entre em contato<span>.</span></h2>
+        <p class="secao-intro">Tem uma oportunidade ou quer trocar ideias sobre tecnologia? Envie uma mensagem pelo formulário.</p>
+      </div>
+      <form id="formContato" novalidate>
+        <div class="campo"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erroNome"><small class="erro" id="erroNome"></small></div>
+        <div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erroEmail"><small class="erro" id="erroEmail"></small></div>
+        <div class="campo"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="5" required aria-describedby="erroMensagem"></textarea><small class="erro" id="erroMensagem"></small></div>
+        <div class="consentimento"><input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erroConsentimento"><label for="consentimento">Concordo que os dados informados sejam usados apenas para responder a esta mensagem.</label></div>
+        <small class="erro" id="erroConsentimento"></small>
+        <p class="privacidade">Este formulário é apenas demonstrativo: os dados não são enviados nem armazenados. Não informe dados pessoais sensíveis.</p>
+        <button class="botao primario enviar" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button>
+        <p id="mensagemSucesso" class="sucesso" role="status" aria-live="polite"></p>
+      </form>
+      <div class="redes"><span>Você também pode me encontrar em:</span><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a><p>Substitua os links pelos seus perfis, se tiver.</p></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <a class="logo" href="#inicio">V<span>.</span>DEV</a>
+    <p>Feito por Victor · <span id="anoAtual"></span></p>
+    <a class="voltar-topo" href="#topo">Voltar ao topo ↑</a>
+  </footer>
+</body>
+</html>
